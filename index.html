@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="container">
+        <div class="choice-container">
+            <div>
+                <h2>
+                    User choice:
+                    <span id="js-user-choice"></span>
+                </h2>
+            </div>
+            <div>
+                <h2>
+                    Computer choice:
+                    <span id="js-computer-choice"></span>
+                </h2>
+            </div>
+        </div>
+        <div>
+            <h2>
+                Result:
+                <span id="js-result"></span>
+            </h2>
+        </div>
+        <div class="points">
+            <div>
+                <h3>
+                    User points:
+                    <span id="js-points-user">0</span>
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Computer points:
+                    <span id="js-points-cpu">0</span>
+                </h3>
+            </div>
+        </div>
+        <div class="btn-container">
+            <!-- Emojis for the buttons -->
+            <button class="btn" id="Rock">👊</button>
+            <button class="btn" id="Paper">✋</button>
+            <button class="btn" id="Scissors">✌️</button>
+        </div>
+        <div id="reset-container">
+            <button 
+            id="btn-reset"
+            onClick="window.location.reload()">
+            &#128257;
+            </button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- 👊
+✋
+✌️ -->
