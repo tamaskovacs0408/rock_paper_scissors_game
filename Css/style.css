@@ -122,7 +122,6 @@ h3 {
     }
     .btn-container {
         width: 500px;
-        justify-content: space-between;
     }
     .btn {
         font-size: 90px;
@@ -134,7 +133,6 @@ h3 {
         margin-top: 2rem;
         width: 90px;
         height: 90px;
-        letter-spacing: 2px;
     }
     #btn-reset:hover {
         transform: scale(1.3);
