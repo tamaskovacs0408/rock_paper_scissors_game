@@ -1,4 +1,7 @@
+
 body {
+    margin: 0;
+    padding: 0;
     background-image: url("../Imgs/western_background.jpg");
     display: flex;
     flex-direction: column;
