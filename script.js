@@ -5,6 +5,7 @@ const resultDisplay = document.querySelector('#js-result');
 const possibleChoices = document.querySelectorAll(".btn");
 const userPointsDisplay = document.querySelector("#js-points-user");
 const cpuPointsDisplay = document.querySelector("#js-points-cpu");
+const resetButton = document.querySelector('#btn-reset')
 
 let userChoice;
 let cpuChoice;
@@ -37,6 +38,10 @@ function generateCpuChoice() {
 }
 // Making conditions for the game
 function getResult() {
+    resultDisplay.innerHTML = '';
+    userPointsDisplay.innerHTML = 0;
+    cpuPointsDisplay.innerHTML = 0;
+
     if (cpuChoice === userChoice) {
         result = "Draw."
     };
@@ -68,4 +73,15 @@ function getResult() {
     resultDisplay.innerHTML = result;
     userPointsDisplay.innerHTML = userPoints;
     cpuPointsDisplay.innerHTML = cpuPoints;
+
 }
+
+resetButton.addEventListener('click', () => {
+    userPoints = 0;
+    cpuPoints = 0;
+    userChoiceDisplay.innerHTML = ''
+    cpuChoiceDisplay.innerHTML = '';
+    resultDisplay.innerHTML = '';
+    userPointsDisplay.innerHTML = userPoints;
+    cpuPointsDisplay.innerHTML = cpuPoints;
+})
