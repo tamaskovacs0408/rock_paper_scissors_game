@@ -78,6 +78,7 @@ h3 {
     font-size: 50px;
     text-shadow: 3px 3px black;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 .btn:hover {
     transform: scale(1.1);
@@ -102,6 +103,7 @@ h3 {
     border: none;
     outline: none;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 #btn-reset:hover {
     transform: scale(1.1);
