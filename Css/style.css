@@ -4,3 +4,40 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: radial-gradient(circle at 50% 20%, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 3rem;
+  margin: 30px auto;
+}
+
+main {
+  margin: 20px auto;
+}
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
