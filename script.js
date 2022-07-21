@@ -74,8 +74,10 @@ function getResult() {
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     userChoiceDisplay.innerHTML = userChoice;
+    cpuChoiceDisplay.innerHTML = '';
+    resultDisplay.innerHTML = '';
     setTimeout(generateCpuChoice, 800)
-    setTimeout(getResult, 800)
+    setTimeout(getResult, 1400)
 }))
 // Reset button
 resetButton.addEventListener('click', () => {
