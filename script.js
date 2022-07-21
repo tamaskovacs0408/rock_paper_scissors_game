@@ -16,7 +16,6 @@ let cpuPoints = 0;
 // Random number generating for the possible choices of rock, paper, scissors
 function generateCpuChoice() {
     const randNum = Math.floor(Math.random() * possibleChoices.length) + 1; // standard from 0 to 2, that's we need the + 1
-    console.log(randNum);
 
     if (randNum === 1) {
         cpuChoice = "Rock"
@@ -27,7 +26,7 @@ function generateCpuChoice() {
     if (randNum === 3) {
         cpuChoice = "Scissors"
     }
-
+    cpuChoiceDisplay.style.color = 'red';
     cpuChoiceDisplay.innerHTML = cpuChoice;
 }
 // Making conditions for the game
