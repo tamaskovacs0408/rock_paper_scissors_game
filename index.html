@@ -12,56 +12,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Rock, Paper, Scissors</h1>
-    <div class="container">
-        <div class="choice-container">
-            <div>
-                <h2>
-                    User choice:
-                    <span id="js-user-choice"></span>
-                </h2>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="choice-container">
+                <div>
+                    <h2>
+                        User choice:
+                        <span id="js-user-choice"></span>
+                    </h2>
+                </div>
+                <div>
+                    <h2>
+                        Computer choice:
+                        <span id="js-computer-choice"></span>
+                    </h2>
+                </div>
             </div>
             <div>
                 <h2>
-                    Computer choice:
-                    <span id="js-computer-choice"></span>
+                    Result:
+                    <span id="js-result"></span>
                 </h2>
             </div>
-        </div>
-        <div>
-            <h2>
-                Result:
-                <span id="js-result"></span>
-            </h2>
-        </div>
-        <div class="points">
-            <div>
-                <h3>
-                    User points:
-                    <span id="js-points-user">0</span>
-                </h3>
+            <div class="points">
+                <div>
+                    <h3>
+                        User points:
+                        <span id="js-points-user">0</span>
+                    </h3>
+                </div>
+                <div>
+                    <h3>
+                        Computer points:
+                        <span id="js-points-cpu">0</span>
+                    </h3>
+                </div>
             </div>
-            <div>
-                <h3>
-                    Computer points:
-                    <span id="js-points-cpu">0</span>
-                </h3>
+            <div class="btn-container">
+                <button class="btn" id="Rock">ROCK</button>
+                <button class="btn" id="Paper">PAPER</button>
+                <button class="btn" id="Scissors">SCISSORS</button>
+            </div>
+            <div id="reset-container">
+                <button 
+                id="btn-reset"
+                >
+                RESET
+                </button>
             </div>
         </div>
-        <div class="btn-container">
-            <!-- Emojis for the buttons -->
-            <button class="btn" id="Rock">👊</button>
-            <button class="btn" id="Paper">✋</button>
-            <button class="btn" id="Scissors">✌️</button>
-        </div>
-        <div id="reset-container">
-            <button 
-            id="btn-reset"
-            >
-            &#128257;
-            </button>
-        </div>
-    </div>
+    </main>
+    <footer>
+        Made by Tamas Kovacs 2022.
+    </footer>
 
     <script src="./script.js"></script>
 </body>
