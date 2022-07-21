@@ -4,6 +4,12 @@
   }
   main {
     .container {
+      .btn-container {
+        justify-content: center;
+        .btn {
+          margin: 5rem;
+        }
+      }
       .reset-container {
         height: 80px;
         margin: 20px auto;
