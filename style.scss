@@ -2,6 +2,7 @@
 @use "./Sass_components/reseter";
 @use "./Sass_components/size_medium";
 @use "./Sass_components/size_large";
+@use "./Sass_components/size_xlarge";
 
 html {
   font-size: 10px;
@@ -147,4 +148,8 @@ footer {
 
 @media screen and (min-width: 992px){
   @include size_large.large;
+}
+
+@media screen  and (min-width: 1200px){
+  @include size_xlarge.xlarge;
 }

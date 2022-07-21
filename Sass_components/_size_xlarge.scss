@@ -1,0 +1,13 @@
+@mixin xlarge {
+  body {
+    height: 100%;
+  }
+  main {
+    .container {
+      .reset-container {
+        height: 80px;
+        margin: 20px auto;
+      }
+    }
+  }
+}
