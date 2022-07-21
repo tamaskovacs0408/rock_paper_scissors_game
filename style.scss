@@ -15,7 +15,8 @@ header {
   text-align: center;
   h1 {
     font-family: variables.$heading_font_family;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-shadow: variables.$text_shadow;
     margin: 30px auto;
   }
 }
@@ -25,6 +26,36 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: auto;
+    .choice-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 30px auto;
+      div {
+        margin: 20px;
+        text-align: center;
+        h2 {
+          font-family: variables.$heading_font_family;
+          font-size: 2.4rem;
+        }
+        p {
+          color: variables.$response_color;
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .result_container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      h2 {
+        font-family: variables.$heading_font_family;
+        font-size: 3rem;
+        color: variables.$response_color;
+    }
     
   }
+}
 }
