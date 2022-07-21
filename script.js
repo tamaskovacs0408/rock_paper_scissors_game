@@ -38,30 +38,37 @@ function getResult() {
 
     if (cpuChoice === userChoice) {
         result = "Draw."
+        resultDisplay.style.color = 'white'
     }
     if (cpuChoice === "Rock" && userChoice === "Paper") {
         result = "User won!"
         userPoints += 1;
+        resultDisplay.style.color = '#53FF45';
     }
     if (cpuChoice === "Rock" && userChoice === "Scissors") {
-        result = "Computer won!"
+        result = "Computer won."
         cpuPoints += 1;
+        resultDisplay.style.color = 'red';
     }
     if (cpuChoice === "Paper" && userChoice === "Scissors") {
         result = "User won!"
         userPoints += 1;
+        resultDisplay.style.color = '#53FF45';
     }
     if (cpuChoice === "Paper" && userChoice === "Rock") {
-        result = "Computer won!"
+        result = "Computer won."
         cpuPoints += 1;
+        resultDisplay.style.color = 'red';
     }
     if (cpuChoice === "Scissors" && userChoice === "Rock") {
         result = "User won!"
         userPoints += 1;
+        resultDisplay.style.color = '#53FF45';
     }
     if (cpuChoice === "Scissors" && userChoice === "Paper") {
-        result = "Computer won!"
+        result = "Computer won."
         cpuPoints += 1;
+        resultDisplay.style.color = 'red';
     }
 
     resultDisplay.innerHTML = result;
