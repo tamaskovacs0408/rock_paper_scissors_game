@@ -222,3 +222,48 @@ footer {
     height: 150px;
   }
 }
+@media screen and (min-width: 992px) {
+  header h1 {
+    font-size: 5rem;
+  }
+  main .container .choice-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 120px;
+  }
+  main .container .choice-container div h2 {
+    font-size: 4rem;
+  }
+  main .container .choice-container div p {
+    font-size: 3.6rem;
+  }
+  main .container .result_container {
+    min-height: 200px;
+  }
+  main .container .result_container h2 {
+    font-size: 5rem;
+  }
+  main .container .points_container {
+    height: 120px;
+    margin: 40px auto;
+  }
+  main .container .points_container h3 {
+    font-size: 4rem;
+  }
+  main .container .btn-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 180px;
+  }
+  main .container .btn-container .btn {
+    width: 100px;
+    height: 100px;
+  }
+  main .container .reset-container {
+    height: 120px;
+    margin: 40px auto;
+  }
+  main .container .reset-container button {
+    width: 120px;
+  }
+}

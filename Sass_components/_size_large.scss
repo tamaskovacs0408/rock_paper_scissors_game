@@ -1,0 +1,51 @@
+@mixin large {
+  header {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  main {
+    .container {
+      .choice-container {
+        justify-content: space-around;
+        height: 120px;
+        div {
+          h2 {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 3.6rem;
+          }
+        }
+      }
+      .result_container {
+        min-height: 200px;
+        h2 {
+          font-size: 5rem;
+        }
+      }
+      .points_container {
+        height: 120px;
+        margin: 40px auto;
+        h3 {
+          font-size: 4rem;
+        }
+      }
+      .btn-container {
+        justify-content: space-around;
+        height: 180px;
+        .btn {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .reset-container {
+        height: 120px;
+        margin: 40px auto;
+        button {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
